@@ -400,7 +400,7 @@ airplane,221,158,2	script	Pilot#airplane	852,{
 		mes "[Pilot]";
 		mes "Ha pasado tantooo";
 		mes "tiempo desde que he";
-		mes "disfrutado una agradable  y fría";
+		mes "disfrutado una agradable y fría";
 		mes "bebida alcohólica. ¡Pero el";
 		mes "trabajo requiere que esté tan";
 		mes "atento como pueda!";
