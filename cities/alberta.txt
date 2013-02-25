@@ -21,7 +21,7 @@
 
 alberta,97,51,0	script	Fabian	84,{
 	mes "[Fabian]";
-	mes "Hombre... Cuando viajas alrededor del mundo, escuchas algunas cosas loas.";
+	mes "Hombre... Cuando viajas alrededor del mundo, escuchas algunas cosas locas.";
 	next;
 	mes "[Fabian]";
 	mes "Una vez, escuché que hay Cards que contienen el poder de los monstruos. Si alguien logra tener en sus manos una carta, podrá ser capaz de usar el poder de ese monstruo.";
@@ -74,7 +74,7 @@ alberta,131,139,2	script	Drunken Old Man	54,{
 			mes "[Deagle]";
 			mes "Hahahaha ^666666*Hip*^000000... Te pusiste nervioso. Puedo parecer inútil ahora, pero yo solía ser un marinero en el 'Going Mary'.";
 			next;
-			switch(select("Nuna he oído de él.","¿En serio? ¡No bromees!")) {
+			switch(select("Nunca he oído de él.","¿En serio? ¡No bromees!")) {
 				case 1:
 					mes "[Deagle]";
 					mes "¡¿Nunca has oído de él?! Todo el mundo conoce al famoso barco pirata 'Going Mary' ^666666*Hip~*^000000";
@@ -87,7 +87,7 @@ alberta,131,139,2	script	Drunken Old Man	54,{
 					close;
 				case 2:
 					mes "[Deagle]";
-					mes "¡Así es! NADIE se mete con la tripulación del 'Going Mary' ¡Y nadie puede vencer a nuestro capitán en una pelea de espadas!";
+					mes "¡Así es! NADIE se mete con la tripulación del 'Going Mary' ¡Y nadie puede vencer a nuestro capitán en un duelo de espadas!";
 					next;
 					mes "[Deagle]";
 					mes "¡¡¡CAPITÁN~!!! ^666666*Hip~*^000000 Él blandiría su espada así, luego... ¡¡LUEGO!!";
@@ -132,7 +132,7 @@ alberta,58,80,2	script	Shakir	99,{
 		mes "Así, ¡luego podemos viajar a cualquier lugar y vender nuestros ítems para obtener ganancias!";
 		next;
 		mes "[Shakir]";
-		mes "De este modo, el negocio es más conveniente y seguro. No te distraigas, aunque es muy fácil hacerlo.";
+		mes "De este modo, el negocio es más conveniente y seguro. Pero no te distraigas, porque es muy fácil hacerlo.";
 	}
 	close;
 }
@@ -302,7 +302,7 @@ alberta,190,173,4	script	Phelix	85,{
 		set @event_zelopy,1;
 		close;
 	} else {
-		mes "Hmm, quieres cambiar jellopies por Red Potions o algunos Carrots, ¿eh? Bien, ¿cuál quieres?";
+		mes "Hmm, ¿quieres cambiar jellopies por Red Potions o algunos Carrots, eh? Bien, ¿cuál quieres?";
 		next;
 		switch(select("Red Potions por favor.","Carrots por favor.")) {
 		case 1:
@@ -329,7 +329,7 @@ alberta,190,173,4	script	Phelix	85,{
 				case 2:
 					mes "[Phelix]";
 					mes "No voy a darte más de 100  a la vez, así que no te molestes, ¿de acuerdo? Si no quieres ninguna, sólo escribe '0'.";
-					mes "Ahora mismo, el total que puedes obtener es" + .@max + ", pero recuerda, 100 como máximo, ¿Acaso quieres romper mi espalda?";
+					mes "Ahora mismo, el total que puedes obtener es" + .@max +", pero recuerda, 100 como máximo, ¿Acaso quieres romper mi espalda?";
 					input .@amount;
 					next;
 					mes "[Phelix]";
@@ -387,7 +387,7 @@ alberta,190,173,4	script	Phelix	85,{
 						close;
 					}
 					if (.@amount > 100) {
-						mes "Hey idiota, dije 100 cómo máximo, ¡no más que eso! No voy a romper mi espalda porque te da la gana!";
+						mes "Hey idiota, dije 100 como máximo, ¡no más que eso! ¡No voy a romper mi espalda porque te da la gana!";
 						close;
 					}
 					if (countitem(909) < .@amount*10) {
